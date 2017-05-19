@@ -1,2 +1,2 @@
-# GuessingTheWord
-Simple text-based word guessing game for tutorial
+# Guess-the-Word
+Simple text-based word guessing game for a programming tutorial
