@@ -24,14 +24,11 @@ public:
 
 	int nGuesses;
 	int nMistakes;
-
-	// this will depend on the graphic, hangman == 8 I believe
 	const int maxMistakes=8; 
 
 	std::string secretWord;
 	std::string wordInProgress;
 	int wordWidth;
-
 	std::string guessedCorrect;
 	std::string guessedIncorrect;
 
@@ -41,5 +38,4 @@ public:
 	bool isSolved();
 	bool guessesLeft();
 
-private:
 };

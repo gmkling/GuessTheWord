@@ -28,8 +28,6 @@ public:
 	void displayGameStatus(GuessingGame input)
 	{
 		int padding;
-		// get guess/mistake widths, do score row
-		// put previously guessed letters in the app. boxes
 
 		// header/title block
 		cout<<dispBar<<std::endl;

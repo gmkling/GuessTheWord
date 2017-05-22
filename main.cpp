@@ -8,6 +8,8 @@
 
 #include "GuessingGameTextView.cpp"
 #include <cstring>
+#include <cctype>
+#include <algorithm>
 
 int main(int argc, char *argv[])
 {
@@ -15,27 +17,34 @@ int main(int argc, char *argv[])
 	std::string input;
 	bool guessResult;
 
-	// check the word input, clearhome, start game
+    // Some error checks
+    std::string secretWord(argv[1]);
+
+	//if(std::any_of(secretWord.begin(), secretWord.end(), &::isupper)) 
+    if(isupper(secretWord.at(0)))
+    {
+        std::cout<<"No capital letters allowed in the secret word. Exiting."<<std::endl;
+        return 0;
+    }
+
 	if(strlen(argv[1])>26)
 	{
 		std::cout<<"Error: Secret word is limited to 26 characters in width. Exiting."<<std::endl;
 		return 0;
 	}
+
+	// These two lines have control chars that may not work on Windows or in IDE debuggers
 	cout << "\e[8;16;100t";
-	std::cout<<"\033[2J\033[1;1H";
-	GuessingGame theGame(argv[1]);
+	cout<<"\033[2J\033[1;1H";
+	GuessingGame theGame(secretWord);
 	
-	// the control loop loops until the puzzle is solved or we run out of guesses
 	while(!theGame.isSolved() && theGame.guessesLeft())
 	{
-		// display the view
 		theView.displayGameStatus(theGame);
 
-		// ask for a guess (letter or word)
 		std::cout<<"Please guess a letter or the word: ";
 		std::cin>>input;
 
-		// error check input
 		if(input.size()<1)
 		{
 			std::cout<<"You wasted a guess by entering no letters! Do better."<<std::endl;
@@ -43,7 +52,6 @@ int main(int argc, char *argv[])
 			continue;
 		}
 
-		// is the guess a letter or word?
 		if(input.size()==1)
 		{
 			guessResult = theGame.guessLetter(input.substr(0, 1));
