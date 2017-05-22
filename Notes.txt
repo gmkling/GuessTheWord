@@ -4,7 +4,7 @@ Notes on the Tutorial
 
 This tutorial is intended to be accompanied by a video. The structure of the video would roughly follow the tutorial, which would be the basis for a script. The discussion of the game's rules would be done with either sharpie on paper, or drawn with a tablet in the manner of Kahn academy. The code overview would be a screencast with large type, and there are a few places where block diagrams would help.
 
-In addition to the ideas for future work in the tutorial, I would want subsequent tutorials to cover seperation of concerns, how the underlying data structures for std::string works, and experimenting with creating a GUI based view.
+In addition to the ideas for future work in the tutorial, I would want subsequent tutorials to cover seperation of concerns and why it matters, how the underlying data structures for std::string works, and creating a GUI based view. Previous to this one, I would like to use a simpler game as a context for presenting OOP concepts.
 
-I decided early on to use C++, and this was only because I didn't feel I could complete the prompt in another language with the time I had available. After going through this exercise, I don't think C++ would be easy to teach to this age range, and I would much rather author tutorials in Lua or Python once I re-familiarize myself with them. I would also like to teach OOP concepts using a much simpler game, like Guess-the-Number (from 1-10), or something within the Roblox ecosystem where there are fewer details to discuss.
+I decided early on to use C++, and this was only because I didn't feel I could complete the prompt in another language with the time I had available. After going through this exercise, I don't think C++ would be easy to teach to this age range, and I would much rather author tutorials in Lua or Python once I re-familiarize myself with them. 
 
