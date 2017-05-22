@@ -368,5 +368,6 @@ There is some code in the ```main()``` function that may be more appropriate in 
 
 In this tutorial, I've mentioned the Model-View-Controller pattern. This powerful paradigm helps make code reusable. For example, one could easily swap out the ```GuessingGameTextView``` with new code to change the way the game is displayed. What new way of displaying the game can you imagine coding? What would you need to learn about to do that?
 
-
+#####Conclusion
+I hope that you've enjoyed building a simple "GuessTheWord" game in C++. In the future I hope to follow up this tutorial with a video, and show you how we can use some of the same code to make an impressive GUI-based version of the game. Happy Coding!
 
