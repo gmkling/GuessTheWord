@@ -4,17 +4,17 @@ Word games are a fun way to build our vocabulary or flex our spelling skills. Ma
 ####Game Overview
 Let's discuss in detail how the game works. A secret word is selected by the "host" of the game, often a teacher drawing on a whiteboard. The word may not be a proper noun (name, place names, companies, etc.), and the host draws a line for each letter in the secret word.
 
-![Figure 1: The game begins](/content/images/2017/05/GuessTheWord_Fig1.png)
+![Figure 1: The game begins](http://garrykling.com/content/images/2017/05/GuessTheWord_Fig1.png)
 > Figure 1: The game begins
 
 Students take turns guessing letters, and if any letter matches, the teacher fills in the blank space. Incorrect letters are placed below in the "graveyard" of failed guesses. Students can also make guesses at what the word is, but wrong answers count as mistakes. Mistakes are tallied, and sometimes the total number of guesses are too. 
 
-![Figure 2: The game in progress](/content/images/2017/05/GuessTheWord_Fig2.png)
+![Figure 2: The game in progress](http://garrykling.com/content/images/2017/05/GuessTheWord_Fig2.png)
 >Figure 2: The game in progress
 
 The game is won when the students either finish the word or guess the word. The game is lost when too many mistakes are made.
 
-![Figure 3: The game is won](/content/images/2017/05/GuessTheWord_Fig3.png)
+![Figure 3: The game is won](http://garrykling.com/content/images/2017/05/GuessTheWord_Fig3.png)
 
 > Figure 3: The game is won
 
